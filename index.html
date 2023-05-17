@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <h1 id="title">Dinner Menu</h1>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <p id="description">Please submit your request for the upcoming dinner</p>
+  <body>
+    <form id="survey-form">
+      <label for="name" id="name-label">Name <input id="name" type="text" placeholder="Vladimir Putin" required/></label>
+      <label for="email" id="email-label">email <input id="email" type="email" placeholder="Vladimir.Putin@russia.ru" required/></label>
+      <label for="number" id="number-label">Number <input id="number" type="number" min="13" max="20" Placeholder="14">
+      <label for="dropdown" id="dropdown-label">Quizine to Order <select id="dropdown">
+        <option value="">(Select One)</option>
+        <option value="1">Taco</option>
+        <option value="2">Enchilada</option>
+        <option value="3">Curry</option>
+        </select>
+        </label>
+        <fieldset>
+        <p> Hot Sauce</p>
+        <label for="none">None <input type="radio" id="none" name="hot-sauce" class="inline" value="7"/></label>
+        <label for="Hot">Hot <input type="radio" id="Hot" name="hot-sauce" class="inline" value="8"/></label>
+        <label for="mild">Mild <input type="radio" id="mild" name="hot-sauce" class="inline" value="9"/></label>
+        </fieldset>
+        <fieldset>
+          <p>Options </p>
+          <label for="letus">Letus <input type="checkbox" id="letus" name="options" value="4" class="inline"/></label>
+          <label for="tomato">Tomato <input type="checkbox" id="tomato" name="options" value="5" class="inline"/></label>
+          <label for="picles">Picles <input type="checkbox" id="picles" name="options" value="6" class="inline"/></label>
+        </fieldset>
+        <label for="special-requests">Special Requests <textarea id="special-requests" rows="3" cols="30" placeholder="Please include extra sauce."></textarea>
+        </label>
+        <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+  </html>
